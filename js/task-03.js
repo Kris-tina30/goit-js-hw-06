@@ -10,18 +10,17 @@ const images = [
   {
     url: 'https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
     alt: 'Group of Horses Running',
-  }, 
+  },
 ];
 
 const galleryList = document.querySelector('.gallery');
 
-const imagesList = images.map(({url, alt}) => {
+const imagesList = images.map(({ url, alt }) => {
   return `<li class="gallery__item"><img src="${url}" alt="${alt}"  width="270"></li>`;
 });
 
-const imagesListEl = imagesList.join("");
+const imagesListEl = imagesList.join('');
 
-galleryList.insertAdjacentHTML("afterbegin", imagesListEl);
+galleryList.insertAdjacentHTML('afterbegin', imagesListEl);
 
 console.log(galleryList);
-
