@@ -6,4 +6,5 @@ validationInput.addEventListener('blur', event => {
     return validationInput.classList.add('valid');
   }
   validationInput.classList.add('invalid');
+  validationInput.classList.remove('valid');
 });

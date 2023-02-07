@@ -14,7 +14,7 @@ const formSubmitHandler = event => {
   };
 
   if (email === '' || password === '') {
-    alert('Всі поля повинні бути заповненні!');
+    return alert('Всі поля повинні бути заповненні!');
   }
 
   console.log(formData);
